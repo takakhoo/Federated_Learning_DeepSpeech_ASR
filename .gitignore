@@ -1,7 +1,8 @@
 *.ckpt
 *.pt
+*.png
 logs
-
+outputs
 
 .vscode
 .pytest_cache

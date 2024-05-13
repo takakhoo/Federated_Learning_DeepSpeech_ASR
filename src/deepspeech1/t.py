@@ -222,7 +222,7 @@ if __name__ == '__main__':
 
     # training config
     config.update({
-        'gpus': 4,
+        'gpus': 1,
         'learning_rate':0.1,
         'cpus':16,
         'max_epoch': 100,
@@ -260,7 +260,7 @@ if __name__ == '__main__':
         logger=tb_logger,  # Use TensorBoard logger
         callbacks=[checkpoint_callback],  # Add model checkpoint callback
         precision=16 if config['half_precision'] else 32, 
-        accelerator='ddp',  # Use DDP with multiple GPUs if available, else use single GPU or CPU
+        # accelerator='ddp',  # Use DDP with multiple GPUs if available, else use single GPU or CPU
     )
     # Start training
     trainer.fit(model)

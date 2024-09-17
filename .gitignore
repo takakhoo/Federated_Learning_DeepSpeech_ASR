@@ -2,6 +2,7 @@
 *.pt
 *.png
 logs
+logging
 outputs
 
 .vscode

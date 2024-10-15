@@ -384,7 +384,9 @@ if __name__ == "__main__":
     parser.add_argument("--optimizer_name", type=str, default='Adam', help="Optimizer to use for optimization")
     parser.add_argument("--lr", type=float, default=0.5, help="Learning rate for optimization")
     parser.add_argument("--zero_lr", type=float, default=100, help="Learning rate for zero order optimization")
-    parser.add_argument("--distance_function", type=str, default='cosine', choices=["L1", "L2","cosine"], help="Distance function for gradient matching")
+    parser.add_argument("--distance_function", type=str, default='cosine', choices=["L1", "L2","cosine", "cosine+l2"], help="Distance function for gradient matching")
+    parser.add_argument("--distance_function_weight", type=float, default=1.0, help="weight for the main component of the distance function 0-1")
+
     parser.add_argument("--reg", type=str, default='None', choices=["L1", "L2", "TV", "None"], help="Type of regularization")
     parser.add_argument("--reg_weight", type=float, default=0.0, help="Weight of the regularization term")
     parser.add_argument("--n_seeds", type=int, default=10, help="Number of seeds to try")

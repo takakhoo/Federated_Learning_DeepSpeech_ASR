@@ -16,6 +16,9 @@ def grad_distance(g1, g2, FLAGS):
         return torch.nn.functional.mse_loss(g1, g2)
     elif FLAGS.distance_function.lower() == 'l1':
         return torch.nn.functional.l1_loss(g1, g2)
+    elif FLAGS.distance_function.lower() == 'cosine+l2':
+        return FLAGS.distance_function_weight * (1 - torch.nn.functional.cosine_similarity(g1.reshape(1,-1), g2.reshape(1,-1)) ) +\
+                (1- FLAGS.distance_function_weight) * torch.nn.functional.mse_loss(g1, g2)
     else:
         raise NotImplementedError
 

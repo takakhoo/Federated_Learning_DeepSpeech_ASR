@@ -3,6 +3,7 @@
 *.png
 logs
 logging
+logging_bak
 outputs
 
 .vscode

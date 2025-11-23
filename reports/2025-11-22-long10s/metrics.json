@@ -1,0 +1,46 @@
+{
+  "global_mae": 8.782835006713867,
+  "global_snr_db": -0.3279181520678112,
+  "runtime_seconds": 3200.2924122810364,
+  "segments": [
+    {
+      "grid_index": 0,
+      "start_frame": 0,
+      "end_frame": 300,
+      "mae": 8.95718765258789,
+      "snr_db": -0.4404915444806942
+    },
+    {
+      "grid_index": 1,
+      "start_frame": 150,
+      "end_frame": 450,
+      "mae": 8.868587493896484,
+      "snr_db": -0.34292196965406113
+    },
+    {
+      "grid_index": 2,
+      "start_frame": 300,
+      "end_frame": 600,
+      "mae": 8.745551109313965,
+      "snr_db": -0.2715544908359301
+    },
+    {
+      "grid_index": 3,
+      "start_frame": 450,
+      "end_frame": 627,
+      "mae": 8.53039264678955,
+      "snr_db": -0.3562415243202086
+    },
+    {
+      "grid_index": 4,
+      "start_frame": 600,
+      "end_frame": 627,
+      "mae": 7.259876728057861,
+      "snr_db": 0.5058689794919081
+    }
+  ],
+  "decoder_hypothesis": "ap'gdiehrogejulcqxlvznlrnqxqcmcxqxwncq qhqaqhqxqeuewzwpzpxplpzrqnqnycxlmlmlqmnqnqnqntcrnxnynrnxrnxnmntm mnmpxpnpapdvdcrxlxqxlalaxexxnapaxps xccmjxxpiszhlucsrrrzweccqconpnnxixadn oclrxxnxnxnrxnxnxrxnrcrcrpczcrnpxncqcqppayaihhehaxrxlxa'rnzvfq'rnxnlclcrnrnxqnqcnacqrclxlxscfala'xa'xxqrlacnanxaah'o'axaia'nt't'gnmcnpcrcrcqmnlqvlmhthgvpe u",
+  "reference_transcript": "alexander ossipon got up tall in his threadbare blue serge suit under the low ceiling shook off the stiffness of long immobility and strolled away into the kitchen down two steps to look over stevie's shoulder",
+  "wer": 1.0,
+  "reconstruction_audio": "analysis/sampleidx_0_reconstruction.wav"
+}

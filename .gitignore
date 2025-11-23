@@ -1,6 +1,7 @@
 *.ckpt
 *.pt
 *.png
+!reports/**/*.png
 logs
 logging
 logging_bak

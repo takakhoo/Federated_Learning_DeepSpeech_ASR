@@ -1,0 +1,542 @@
+2025-11-22 02:05:05,140 - INFO: ================================================================================
+2025-11-22 02:05:05,140 - INFO: ================================================================================
+2025-11-22 02:05:05,140 - INFO: Starting new experiment run
+2025-11-22 02:05:05,140 - INFO: Starting new experiment run
+2025-11-22 02:05:05,140 - INFO: ================================================================================
+2025-11-22 02:05:05,140 - INFO: ================================================================================
+2025-11-22 02:05:05,140 - INFO: Experiment configuration:
+2025-11-22 02:05:05,140 - INFO: Experiment configuration:
+2025-11-22 02:05:05,140 - INFO:   dataset_path: ../local_datasets/librispeech_long_10s
+2025-11-22 02:05:05,140 - INFO:   dataset_path: ../local_datasets/librispeech_long_10s
+2025-11-22 02:05:05,141 - INFO:   checkpoint_path: None
+2025-11-22 02:05:05,141 - INFO:   checkpoint_path: None
+2025-11-22 02:05:05,141 - INFO:   min_duration_ms: 0
+2025-11-22 02:05:05,141 - INFO:   min_duration_ms: 0
+2025-11-22 02:05:05,141 - INFO:   max_duration_ms: 13000
+2025-11-22 02:05:05,141 - INFO:   max_duration_ms: 13000
+2025-11-22 02:05:05,141 - INFO:   batch_start_idx: 0
+2025-11-22 02:05:05,141 - INFO:   batch_start_idx: 0
+2025-11-22 02:05:05,141 - INFO:   batch_end_idx: 1
+2025-11-22 02:05:05,141 - INFO:   batch_end_idx: 1
+2025-11-22 02:05:05,141 - INFO:   batch_size: 1
+2025-11-22 02:05:05,141 - INFO:   batch_size: 1
+2025-11-22 02:05:05,141 - INFO:   model_name: ds1
+2025-11-22 02:05:05,141 - INFO:   model_name: ds1
+2025-11-22 02:05:05,141 - INFO:   dropout_prob: 0.0
+2025-11-22 02:05:05,141 - INFO:   dropout_prob: 0.0
+2025-11-22 02:05:05,141 - INFO:   context_frames: 6
+2025-11-22 02:05:05,141 - INFO:   context_frames: 6
+2025-11-22 02:05:05,141 - INFO:   resume_from_first_order: False
+2025-11-22 02:05:05,141 - INFO:   resume_from_first_order: False
+2025-11-22 02:05:05,141 - INFO:   num_seeds: 10
+2025-11-22 02:05:05,141 - INFO:   num_seeds: 10
+2025-11-22 02:05:05,141 - INFO:   optimizer: Adam
+2025-11-22 02:05:05,141 - INFO:   optimizer: Adam
+2025-11-22 02:05:05,141 - INFO:   learning_rate: 0.05
+2025-11-22 02:05:05,141 - INFO:   learning_rate: 0.05
+2025-11-22 02:05:05,141 - INFO:   regularization: None
+2025-11-22 02:05:05,141 - INFO:   regularization: None
+2025-11-22 02:05:05,141 - INFO:   reg_weight: 0.0
+2025-11-22 02:05:05,141 - INFO:   reg_weight: 0.0
+2025-11-22 02:05:05,141 - INFO:   max_iterations: 4000
+2025-11-22 02:05:05,141 - INFO:   max_iterations: 4000
+2025-11-22 02:05:05,141 - INFO:   top_grad_percentage: 1.0
+2025-11-22 02:05:05,141 - INFO:   top_grad_percentage: 1.0
+2025-11-22 02:05:05,141 - INFO:   distance_metric: cosine
+2025-11-22 02:05:05,141 - INFO:   distance_metric: cosine
+2025-11-22 02:05:05,141 - INFO:   distance_metric_weight: 0.5
+2025-11-22 02:05:05,141 - INFO:   distance_metric_weight: 0.5
+2025-11-22 02:05:05,141 - INFO:   initialization_method: uniform
+2025-11-22 02:05:05,141 - INFO:   initialization_method: uniform
+2025-11-22 02:05:05,141 - INFO:   patience: 1000
+2025-11-22 02:05:05,141 - INFO:   patience: 1000
+2025-11-22 02:05:05,141 - INFO:   use_zero_order_optimization: False
+2025-11-22 02:05:05,141 - INFO:   use_zero_order_optimization: False
+2025-11-22 02:05:05,141 - INFO:   zero_order_lr: 100
+2025-11-22 02:05:05,141 - INFO:   zero_order_lr: 100
+2025-11-22 02:05:05,141 - INFO:   zero_max_iterations: 200
+2025-11-22 02:05:05,141 - INFO:   zero_max_iterations: 200
+2025-11-22 02:05:05,141 - INFO:   use_grid_optimization: True
+2025-11-22 02:05:05,141 - INFO:   use_grid_optimization: True
+2025-11-22 02:05:05,141 - INFO:   grid_size: 300
+2025-11-22 02:05:05,141 - INFO:   grid_size: 300
+2025-11-22 02:05:05,141 - INFO:   grid_overlap: 150
+2025-11-22 02:05:05,141 - INFO:   grid_overlap: 150
+2025-11-22 02:05:05,141 - INFO:   exp_path: logging/0s-13s/DS1_batchstart_0_batch_end_1_init_uniform_opt_Adam_lr_0.05_reg_None_regw_0.0_top-grad-perc_1.0_cpt_None
+2025-11-22 02:05:05,141 - INFO:   exp_path: logging/0s-13s/DS1_batchstart_0_batch_end_1_init_uniform_opt_Adam_lr_0.05_reg_None_regw_0.0_top-grad-perc_1.0_cpt_None
+2025-11-22 02:05:05,141 - INFO: --------------------------------------------------------------------------------
+2025-11-22 02:05:05,141 - INFO: --------------------------------------------------------------------------------
+2025-11-22 02:05:05,141 - INFO: Optimizer: Adam
+2025-11-22 02:05:05,141 - INFO: Optimizer: Adam
+2025-11-22 02:05:05,141 - INFO: Learning rate: 0.05
+2025-11-22 02:05:05,141 - INFO: Learning rate: 0.05
+2025-11-22 02:05:05,141 - INFO: Regularization: None
+2025-11-22 02:05:05,141 - INFO: Regularization: None
+2025-11-22 02:05:05,141 - INFO: Regularization weight: 0.0
+2025-11-22 02:05:05,141 - INFO: Regularization weight: 0.0
+2025-11-22 02:05:05,141 - INFO: Number of iterations: 4000
+2025-11-22 02:05:05,141 - INFO: Number of iterations: 4000
+2025-11-22 02:05:05,141 - INFO: exp_path: logging/0s-13s/DS1_batchstart_0_batch_end_1_init_uniform_opt_Adam_lr_0.05_reg_None_regw_0.0_top-grad-perc_1.0_cpt_None
+2025-11-22 02:05:05,141 - INFO: exp_path: logging/0s-13s/DS1_batchstart_0_batch_end_1_init_uniform_opt_Adam_lr_0.05_reg_None_regw_0.0_top-grad-perc_1.0_cpt_None
+2025-11-22 02:05:05,141 - INFO: Log file: logging/0s-13s/DS1_batchstart_0_batch_end_1_init_uniform_opt_Adam_lr_0.05_reg_None_regw_0.0_top-grad-perc_1.0_cpt_None/experiment.log
+2025-11-22 02:05:05,141 - INFO: Log file: logging/0s-13s/DS1_batchstart_0_batch_end_1_init_uniform_opt_Adam_lr_0.05_reg_None_regw_0.0_top-grad-perc_1.0_cpt_None/experiment.log
+2025-11-22 02:05:07,255 - INFO: Device: cuda:0
+2025-11-22 02:05:07,255 - INFO: Device: cuda:0
+2025-11-22 02:05:07,255 - INFO: Network: DeepSpeech1WithContextFrames
+2025-11-22 02:05:07,255 - INFO: Network: DeepSpeech1WithContextFrames
+2025-11-22 02:05:07,255 - INFO: Preprocessing: MFCC features (n_mfcc=26, context_frames=6)
+2025-11-22 02:05:07,255 - INFO: Preprocessing: MFCC features (n_mfcc=26, context_frames=6)
+2025-11-22 02:05:07,255 - INFO: Input feature dimension: 338 (MFCC coefficients * (2*context+1))
+2025-11-22 02:05:07,255 - INFO: Input feature dimension: 338 (MFCC coefficients * (2*context+1))
+2025-11-22 02:05:07,255 - INFO: Random init weight
+2025-11-22 02:05:07,255 - INFO: Random init weight
+2025-11-22 02:05:07,287 - INFO: ####################
+2025-11-22 02:05:07,287 - INFO: ####################
+2025-11-22 02:05:07,287 - INFO: Processing batch 0/1
+2025-11-22 02:05:07,287 - INFO: Processing batch 0/1
+2025-11-22 02:05:07,287 - INFO: inputs shape: torch.Size([627, 1, 26]) (time_steps, batch, features)
+2025-11-22 02:05:07,287 - INFO: inputs shape: torch.Size([627, 1, 26]) (time_steps, batch, features)
+2025-11-22 02:05:07,287 - INFO: inputs mean and std: -1.0937, 11.3377
+2025-11-22 02:05:07,287 - INFO: inputs mean and std: -1.0937, 11.3377
+2025-11-22 02:05:07,287 - INFO: TEXT: alexander ossipon got up tall in his threadbare blue serge suit under the low ceiling shook off the stiffness of long immobility and strolled away into the kitchen down two steps to look over stevie's shoulder
+2025-11-22 02:05:07,287 - INFO: TEXT: alexander ossipon got up tall in his threadbare blue serge suit under the low ceiling shook off the stiffness of long immobility and strolled away into the kitchen down two steps to look over stevie's shoulder
+2025-11-22 02:05:07,561 - DEBUG: loss: 7.374272346496582
+2025-11-22 02:05:07,561 - DEBUG: loss: 7.374272346496582
+2025-11-22 02:05:07,741 - DEBUG: matching 0. params with shape torch.Size([29, 2048]) and norm 3.1156671047210693 first ten tensor([-0.0209,  0.0059,  0.0118,  0.0048,  0.0035,  0.0207, -0.0080,  0.0155,
+         0.0217,  0.0136], device='cuda:0', grad_fn=<SliceBackward0>)
+2025-11-22 02:05:07,741 - DEBUG: matching 0. params with shape torch.Size([29, 2048]) and norm 3.1156671047210693 first ten tensor([-0.0209,  0.0059,  0.0118,  0.0048,  0.0035,  0.0207, -0.0080,  0.0155,
+         0.0217,  0.0136], device='cuda:0', grad_fn=<SliceBackward0>)
+2025-11-22 02:05:07,741 - DEBUG:                     gradient norm 5.065489768981934
+2025-11-22 02:05:07,741 - DEBUG:                     gradient norm 5.065489768981934
+2025-11-22 02:05:07,742 - DEBUG: matching 1. params with shape torch.Size([29]) and norm 0.05691046267747879 first ten tensor([ 0.0033, -0.0102, -0.0042,  0.0072,  0.0035,  0.0021, -0.0015, -0.0047,
+         0.0125,  0.0139], device='cuda:0', grad_fn=<SliceBackward0>)
+2025-11-22 02:05:07,742 - DEBUG: matching 1. params with shape torch.Size([29]) and norm 0.05691046267747879 first ten tensor([ 0.0033, -0.0102, -0.0042,  0.0072,  0.0035,  0.0021, -0.0015, -0.0047,
+         0.0125,  0.0139], device='cuda:0', grad_fn=<SliceBackward0>)
+2025-11-22 02:05:07,742 - DEBUG:                     gradient norm 1.0249404907226562
+2025-11-22 02:05:07,742 - DEBUG:                     gradient norm 1.0249404907226562
+2025-11-22 02:05:07,744 - INFO: Experiment Name: DS1_batchstart_0_batch_end_1_init_uniform_opt_Adam_lr_0.05_reg_None_regw_0.0_top-grad-perc_1.0_cpt_None
+2025-11-22 02:05:07,744 - INFO: Experiment Name: DS1_batchstart_0_batch_end_1_init_uniform_opt_Adam_lr_0.05_reg_None_regw_0.0_top-grad-perc_1.0_cpt_None
+2025-11-22 02:05:07,744 - INFO: Using grid-based optimization with grid_size=300, overlap=150
+2025-11-22 02:05:07,744 - INFO: Using grid-based optimization with grid_size=300, overlap=150
+2025-11-22 02:05:07,744 - INFO: Grid optimization: n_frames=627, grid_size=300, overlap=150, stride=150, n_grids=4
+2025-11-22 02:05:07,744 - INFO: Optimizing grid 1/4: frames [0:300]
+2025-11-22 02:05:07,744 - INFO: Grid 1/4 starting LR reset to 0.050000
+2025-11-22 02:05:10,154 - INFO: Grid 1/4, Iter    0, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.96003735, 0.9600, 0.9597, 0.0004, 0.0000, 0.0258, 0.0500, 7.5416
+2025-11-22 02:05:22,287 - INFO: Grid 1/4, Iter   10, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.47467381, 0.4747, 0.4743, 0.0004, 0.0000, 0.0118, 0.0500, 7.4420
+2025-11-22 02:05:33,861 - INFO: Grid 1/4, Iter   20, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.34041876, 0.3404, 0.3401, 0.0004, 0.0000, 0.0066, 0.0500, 7.3863
+2025-11-22 02:05:45,212 - INFO: Grid 1/4, Iter   30, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.28334153, 0.2833, 0.2830, 0.0003, 0.0000, 0.0045, 0.0500, 7.3543
+2025-11-22 02:05:56,791 - INFO: Grid 1/4, Iter   40, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.25134867, 0.2513, 0.2510, 0.0003, 0.0000, 0.0034, 0.0500, 7.3393
+2025-11-22 02:06:08,182 - INFO: Grid 1/4, Iter   50, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.23157603, 0.2316, 0.2313, 0.0003, 0.0000, 0.0028, 0.0500, 7.3336
+2025-11-22 02:06:19,603 - INFO: Grid 1/4, Iter   60, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.21747452, 0.2175, 0.2172, 0.0003, 0.0000, 0.0023, 0.0500, 7.3314
+2025-11-22 02:06:31,066 - INFO: Grid 1/4, Iter   70, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.20617986, 0.2062, 0.2059, 0.0003, 0.0000, 0.0020, 0.0500, 7.3336
+2025-11-22 02:06:42,699 - INFO: Grid 1/4, Iter   80, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.19655108, 0.1966, 0.1963, 0.0003, 0.0000, 0.0018, 0.0500, 7.3415
+2025-11-22 02:06:54,177 - INFO: Grid 1/4, Iter   90, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.18789750, 0.1879, 0.1876, 0.0003, 0.0000, 0.0016, 0.0500, 7.3545
+2025-11-22 02:07:05,595 - INFO: Grid 1/4, Iter  100, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.17987645, 0.1799, 0.1796, 0.0003, 0.0000, 0.0015, 0.0500, 7.3729
+2025-11-22 02:07:17,772 - INFO: Grid 1/4, Iter  110, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.17233080, 0.1723, 0.1721, 0.0003, 0.0000, 0.0014, 0.0500, 7.3962
+2025-11-22 02:07:29,152 - INFO: Grid 1/4, Iter  120, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.16519248, 0.1652, 0.1649, 0.0003, 0.0000, 0.0013, 0.0500, 7.4236
+2025-11-22 02:07:40,522 - INFO: Grid 1/4, Iter  130, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.15842509, 0.1584, 0.1582, 0.0003, 0.0000, 0.0012, 0.0500, 7.4547
+2025-11-22 02:07:52,039 - INFO: Grid 1/4, Iter  140, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.15199924, 0.1520, 0.1517, 0.0003, 0.0000, 0.0011, 0.0500, 7.4889
+2025-11-22 02:08:03,444 - INFO: Grid 1/4, Iter  150, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.14589012, 0.1459, 0.1456, 0.0003, 0.0000, 0.0010, 0.0500, 7.5259
+2025-11-22 02:08:14,836 - INFO: Grid 1/4, Iter  160, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.14007640, 0.1401, 0.1398, 0.0003, 0.0000, 0.0010, 0.0500, 7.5652
+2025-11-22 02:08:26,259 - INFO: Grid 1/4, Iter  170, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.13454366, 0.1345, 0.1343, 0.0003, 0.0000, 0.0009, 0.0500, 7.6056
+2025-11-22 02:08:37,650 - INFO: Grid 1/4, Iter  180, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.12927693, 0.1293, 0.1290, 0.0003, 0.0000, 0.0009, 0.0500, 7.6473
+2025-11-22 02:08:49,022 - INFO: Grid 1/4, Iter  190, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.12426990, 0.1243, 0.1240, 0.0003, 0.0000, 0.0008, 0.0500, 7.6903
+2025-11-22 02:09:01,202 - INFO: Grid 1/4, Iter  200, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.11951548, 0.1195, 0.1193, 0.0003, 0.0000, 0.0008, 0.0500, 7.7337
+2025-11-22 02:09:13,422 - INFO: Grid 1/4, Iter  210, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.11500615, 0.1150, 0.1147, 0.0003, 0.0000, 0.0007, 0.0500, 7.7774
+2025-11-22 02:09:24,829 - INFO: Grid 1/4, Iter  220, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.11073470, 0.1107, 0.1105, 0.0003, 0.0000, 0.0007, 0.0500, 7.8212
+2025-11-22 02:09:36,228 - INFO: Grid 1/4, Iter  230, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.10669410, 0.1067, 0.1064, 0.0003, 0.0000, 0.0007, 0.0500, 7.8646
+2025-11-22 02:09:47,614 - INFO: Grid 1/4, Iter  240, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.10287410, 0.1029, 0.1026, 0.0003, 0.0000, 0.0006, 0.0500, 7.9076
+2025-11-22 02:09:59,030 - INFO: Grid 1/4, Iter  250, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.09926403, 0.0993, 0.0990, 0.0003, 0.0000, 0.0006, 0.0250, 7.9497
+2025-11-22 02:10:10,377 - INFO: Grid 1/4, Iter  260, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.09736919, 0.0974, 0.0971, 0.0003, 0.0000, 0.0006, 0.0250, 7.9703
+2025-11-22 02:10:21,682 - INFO: Grid 1/4, Iter  270, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.09569550, 0.0957, 0.0954, 0.0003, 0.0000, 0.0006, 0.0250, 7.9905
+2025-11-22 02:10:33,408 - INFO: Grid 1/4, Iter  280, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.09405893, 0.0941, 0.0938, 0.0003, 0.0000, 0.0006, 0.0250, 8.0103
+2025-11-22 02:10:44,757 - INFO: Grid 1/4, Iter  290, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.09245765, 0.0925, 0.0922, 0.0003, 0.0000, 0.0006, 0.0250, 8.0299
+2025-11-22 02:10:56,128 - INFO: Grid 1/4, Iter  300, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.09089077, 0.0909, 0.0906, 0.0003, 0.0000, 0.0005, 0.0250, 8.0494
+2025-11-22 02:11:08,204 - INFO: Grid 1/4, Iter  310, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.08935797, 0.0894, 0.0891, 0.0003, 0.0000, 0.0005, 0.0250, 8.0688
+2025-11-22 02:11:19,545 - INFO: Grid 1/4, Iter  320, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.08785886, 0.0879, 0.0876, 0.0003, 0.0000, 0.0005, 0.0250, 8.0882
+2025-11-22 02:11:30,917 - INFO: Grid 1/4, Iter  330, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.08639282, 0.0864, 0.0861, 0.0003, 0.0000, 0.0005, 0.0250, 8.1075
+2025-11-22 02:11:42,953 - INFO: Grid 1/4, Iter  340, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.08496183, 0.0850, 0.0847, 0.0003, 0.0000, 0.0005, 0.0250, 8.1267
+2025-11-22 02:11:54,391 - INFO: Grid 1/4, Iter  350, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.08356363, 0.0836, 0.0833, 0.0003, 0.0000, 0.0005, 0.0250, 8.1454
+2025-11-22 02:12:05,848 - INFO: Grid 1/4, Iter  360, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.08219838, 0.0822, 0.0819, 0.0003, 0.0000, 0.0005, 0.0250, 8.1639
+2025-11-22 02:12:17,294 - INFO: Grid 1/4, Iter  370, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.08086723, 0.0809, 0.0806, 0.0003, 0.0000, 0.0005, 0.0250, 8.1824
+2025-11-22 02:12:28,701 - INFO: Grid 1/4, Iter  380, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.07956684, 0.0796, 0.0793, 0.0003, 0.0000, 0.0005, 0.0250, 8.2007
+2025-11-22 02:12:40,109 - INFO: Grid 1/4, Iter  390, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.07829934, 0.0783, 0.0780, 0.0003, 0.0000, 0.0005, 0.0250, 8.2189
+2025-11-22 02:12:51,526 - INFO: Grid 1/4, Iter  400, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.07706326, 0.0771, 0.0768, 0.0003, 0.0000, 0.0004, 0.0250, 8.2367
+2025-11-22 02:13:03,953 - INFO: Grid 1/4, Iter  410, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.07585704, 0.0759, 0.0756, 0.0003, 0.0000, 0.0004, 0.0250, 8.2544
+2025-11-22 02:13:15,387 - INFO: Grid 1/4, Iter  420, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.07468122, 0.0747, 0.0744, 0.0003, 0.0000, 0.0004, 0.0250, 8.2719
+2025-11-22 02:13:26,835 - INFO: Grid 1/4, Iter  430, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.07353437, 0.0735, 0.0733, 0.0002, 0.0000, 0.0004, 0.0250, 8.2892
+2025-11-22 02:13:38,269 - INFO: Grid 1/4, Iter  440, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.07241571, 0.0724, 0.0722, 0.0002, 0.0000, 0.0004, 0.0250, 8.3064
+2025-11-22 02:13:49,789 - INFO: Grid 1/4, Iter  450, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.07132465, 0.0713, 0.0711, 0.0002, 0.0000, 0.0004, 0.0250, 8.3234
+2025-11-22 02:14:01,255 - INFO: Grid 1/4, Iter  460, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.07026112, 0.0703, 0.0700, 0.0002, 0.0000, 0.0004, 0.0250, 8.3401
+2025-11-22 02:14:12,703 - INFO: Grid 1/4, Iter  470, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06922287, 0.0692, 0.0690, 0.0002, 0.0000, 0.0004, 0.0250, 8.3565
+2025-11-22 02:14:24,083 - INFO: Grid 1/4, Iter  480, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06821096, 0.0682, 0.0680, 0.0002, 0.0000, 0.0004, 0.0250, 8.3727
+2025-11-22 02:14:35,907 - INFO: Grid 1/4, Iter  490, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06722236, 0.0672, 0.0670, 0.0002, 0.0000, 0.0004, 0.0250, 8.3887
+2025-11-22 02:14:47,373 - INFO: Grid 1/4, Iter  500, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06625783, 0.0663, 0.0660, 0.0002, 0.0000, 0.0004, 0.0125, 8.4046
+2025-11-22 02:14:59,628 - INFO: Grid 1/4, Iter  510, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06573743, 0.0657, 0.0655, 0.0002, 0.0000, 0.0004, 0.0125, 8.4125
+2025-11-22 02:15:11,173 - INFO: Grid 1/4, Iter  520, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06526977, 0.0653, 0.0650, 0.0002, 0.0000, 0.0004, 0.0125, 8.4202
+2025-11-22 02:15:22,650 - INFO: Grid 1/4, Iter  530, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06480634, 0.0648, 0.0646, 0.0002, 0.0000, 0.0004, 0.0125, 8.4280
+2025-11-22 02:15:34,157 - INFO: Grid 1/4, Iter  540, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06434578, 0.0643, 0.0641, 0.0002, 0.0000, 0.0004, 0.0125, 8.4357
+2025-11-22 02:15:45,619 - INFO: Grid 1/4, Iter  550, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06388777, 0.0639, 0.0636, 0.0002, 0.0000, 0.0004, 0.0125, 8.4434
+2025-11-22 02:15:57,075 - INFO: Grid 1/4, Iter  560, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06343400, 0.0634, 0.0632, 0.0002, 0.0000, 0.0003, 0.0125, 8.4511
+2025-11-22 02:16:08,576 - INFO: Grid 1/4, Iter  570, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06298280, 0.0630, 0.0627, 0.0002, 0.0000, 0.0003, 0.0125, 8.4588
+2025-11-22 02:16:19,967 - INFO: Grid 1/4, Iter  580, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06253499, 0.0625, 0.0623, 0.0002, 0.0000, 0.0003, 0.0125, 8.4665
+2025-11-22 02:16:31,624 - INFO: Grid 1/4, Iter  590, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06209093, 0.0621, 0.0618, 0.0002, 0.0000, 0.0003, 0.0125, 8.4742
+2025-11-22 02:16:43,019 - INFO: Grid 1/4, Iter  600, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06165081, 0.0617, 0.0614, 0.0002, 0.0000, 0.0003, 0.0125, 8.4819
+2025-11-22 02:16:55,545 - INFO: Grid 1/4, Iter  610, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06121272, 0.0612, 0.0610, 0.0002, 0.0000, 0.0003, 0.0125, 8.4897
+2025-11-22 02:17:07,016 - INFO: Grid 1/4, Iter  620, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06077844, 0.0608, 0.0605, 0.0002, 0.0000, 0.0003, 0.0125, 8.4974
+2025-11-22 02:17:18,480 - INFO: Grid 1/4, Iter  630, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.06034857, 0.0603, 0.0601, 0.0002, 0.0000, 0.0003, 0.0125, 8.5051
+2025-11-22 02:17:30,161 - INFO: Grid 1/4, Iter  640, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05992168, 0.0599, 0.0597, 0.0002, 0.0000, 0.0003, 0.0125, 8.5128
+2025-11-22 02:17:41,657 - INFO: Grid 1/4, Iter  650, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05949807, 0.0595, 0.0593, 0.0002, 0.0000, 0.0003, 0.0125, 8.5205
+2025-11-22 02:17:53,412 - INFO: Grid 1/4, Iter  660, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05907786, 0.0591, 0.0588, 0.0002, 0.0000, 0.0003, 0.0125, 8.5282
+2025-11-22 02:18:04,867 - INFO: Grid 1/4, Iter  670, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05866081, 0.0587, 0.0584, 0.0002, 0.0000, 0.0003, 0.0125, 8.5359
+2025-11-22 02:18:16,262 - INFO: Grid 1/4, Iter  680, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05824828, 0.0582, 0.0580, 0.0002, 0.0000, 0.0003, 0.0125, 8.5436
+2025-11-22 02:18:27,663 - INFO: Grid 1/4, Iter  690, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05783904, 0.0578, 0.0576, 0.0002, 0.0000, 0.0003, 0.0125, 8.5513
+2025-11-22 02:18:39,133 - INFO: Grid 1/4, Iter  700, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05743116, 0.0574, 0.0572, 0.0002, 0.0000, 0.0003, 0.0125, 8.5589
+2025-11-22 02:18:51,506 - INFO: Grid 1/4, Iter  710, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05702972, 0.0570, 0.0568, 0.0002, 0.0000, 0.0003, 0.0125, 8.5666
+2025-11-22 02:19:03,069 - INFO: Grid 1/4, Iter  720, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05663031, 0.0566, 0.0564, 0.0002, 0.0000, 0.0003, 0.0125, 8.5743
+2025-11-22 02:19:14,559 - INFO: Grid 1/4, Iter  730, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05623472, 0.0562, 0.0560, 0.0002, 0.0000, 0.0003, 0.0125, 8.5819
+2025-11-22 02:19:26,270 - INFO: Grid 1/4, Iter  740, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05584335, 0.0558, 0.0556, 0.0002, 0.0000, 0.0003, 0.0125, 8.5896
+2025-11-22 02:19:37,750 - INFO: Grid 1/4, Iter  750, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05545408, 0.0555, 0.0552, 0.0002, 0.0000, 0.0003, 0.0063, 8.5972
+2025-11-22 02:19:49,157 - INFO: Grid 1/4, Iter  760, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05524200, 0.0552, 0.0550, 0.0002, 0.0000, 0.0003, 0.0063, 8.6010
+2025-11-22 02:20:00,561 - INFO: Grid 1/4, Iter  770, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05504924, 0.0550, 0.0548, 0.0002, 0.0000, 0.0003, 0.0063, 8.6048
+2025-11-22 02:20:12,715 - INFO: Grid 1/4, Iter  780, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05485660, 0.0549, 0.0546, 0.0002, 0.0000, 0.0003, 0.0063, 8.6086
+2025-11-22 02:20:25,835 - INFO: Grid 1/4, Iter  790, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05466449, 0.0547, 0.0544, 0.0002, 0.0000, 0.0003, 0.0063, 8.6124
+2025-11-22 02:20:38,218 - INFO: Grid 1/4, Iter  800, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05447245, 0.0545, 0.0542, 0.0002, 0.0000, 0.0003, 0.0063, 8.6162
+2025-11-22 02:20:50,424 - INFO: Grid 1/4, Iter  810, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05428052, 0.0543, 0.0540, 0.0002, 0.0000, 0.0003, 0.0063, 8.6200
+2025-11-22 02:21:02,140 - INFO: Grid 1/4, Iter  820, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05408871, 0.0541, 0.0538, 0.0002, 0.0000, 0.0003, 0.0063, 8.6238
+2025-11-22 02:21:13,580 - INFO: Grid 1/4, Iter  830, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05389684, 0.0539, 0.0537, 0.0002, 0.0000, 0.0003, 0.0063, 8.6276
+2025-11-22 02:21:25,036 - INFO: Grid 1/4, Iter  840, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05370635, 0.0537, 0.0535, 0.0002, 0.0000, 0.0003, 0.0063, 8.6314
+2025-11-22 02:21:36,540 - INFO: Grid 1/4, Iter  850, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05351508, 0.0535, 0.0533, 0.0002, 0.0000, 0.0003, 0.0063, 8.6353
+2025-11-22 02:21:48,040 - INFO: Grid 1/4, Iter  860, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05332375, 0.0533, 0.0531, 0.0002, 0.0000, 0.0003, 0.0063, 8.6391
+2025-11-22 02:21:59,561 - INFO: Grid 1/4, Iter  870, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05313295, 0.0531, 0.0529, 0.0002, 0.0000, 0.0003, 0.0063, 8.6429
+2025-11-22 02:22:11,010 - INFO: Grid 1/4, Iter  880, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05294341, 0.0529, 0.0527, 0.0002, 0.0000, 0.0003, 0.0063, 8.6468
+2025-11-22 02:22:22,391 - INFO: Grid 1/4, Iter  890, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05275244, 0.0528, 0.0525, 0.0002, 0.0000, 0.0003, 0.0063, 8.6506
+2025-11-22 02:22:33,777 - INFO: Grid 1/4, Iter  900, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05256325, 0.0526, 0.0523, 0.0002, 0.0000, 0.0003, 0.0063, 8.6545
+2025-11-22 02:22:45,939 - INFO: Grid 1/4, Iter  910, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05237406, 0.0524, 0.0521, 0.0002, 0.0000, 0.0003, 0.0063, 8.6583
+2025-11-22 02:22:57,314 - INFO: Grid 1/4, Iter  920, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05218494, 0.0522, 0.0519, 0.0002, 0.0000, 0.0003, 0.0063, 8.6622
+2025-11-22 02:23:08,703 - INFO: Grid 1/4, Iter  930, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05199629, 0.0520, 0.0518, 0.0002, 0.0000, 0.0003, 0.0063, 8.6660
+2025-11-22 02:23:20,116 - INFO: Grid 1/4, Iter  940, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05180734, 0.0518, 0.0516, 0.0002, 0.0000, 0.0003, 0.0063, 8.6699
+2025-11-22 02:23:31,497 - INFO: Grid 1/4, Iter  950, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05161941, 0.0516, 0.0514, 0.0002, 0.0000, 0.0003, 0.0063, 8.6738
+2025-11-22 02:23:42,849 - INFO: Grid 1/4, Iter  960, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05143189, 0.0514, 0.0512, 0.0002, 0.0000, 0.0003, 0.0063, 8.6776
+2025-11-22 02:23:54,271 - INFO: Grid 1/4, Iter  970, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05124432, 0.0512, 0.0510, 0.0002, 0.0000, 0.0003, 0.0063, 8.6815
+2025-11-22 02:24:06,050 - INFO: Grid 1/4, Iter  980, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05105740, 0.0511, 0.0508, 0.0002, 0.0000, 0.0003, 0.0063, 8.6854
+2025-11-22 02:24:17,540 - INFO: Grid 1/4, Iter  990, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05087048, 0.0509, 0.0506, 0.0002, 0.0000, 0.0003, 0.0063, 8.6892
+2025-11-22 02:24:27,865 - INFO: Saved checkpoint for grid 1/4 to logging/0s-13s/DS1_batchstart_0_batch_end_1_init_uniform_opt_Adam_lr_0.05_reg_None_regw_0.0_top-grad-perc_1.0_cpt_None/sampleidx_0_grid_grid0_checkpoint.pt
+2025-11-22 02:24:27,865 - INFO: Optimizing grid 2/4: frames [150:450]
+2025-11-22 02:24:27,865 - INFO: Grid 2/4 starting LR reset to 0.050000
+2025-11-22 02:24:29,011 - INFO: Grid 2/4, Iter    0, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.05068457, 0.0507, 0.0504, 0.0002, 0.0000, 0.0003, 0.0500, 8.0308
+2025-11-22 02:24:41,272 - INFO: Grid 2/4, Iter   10, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.04594719, 0.0459, 0.0457, 0.0002, 0.0000, 0.0002, 0.0500, 8.0633
+2025-11-22 02:24:52,754 - INFO: Grid 2/4, Iter   20, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.04243827, 0.0424, 0.0422, 0.0002, 0.0000, 0.0001, 0.0500, 8.0865
+2025-11-22 02:25:04,216 - INFO: Grid 2/4, Iter   30, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.03934866, 0.0393, 0.0391, 0.0002, 0.0000, 0.0001, 0.0500, 8.1330
+2025-11-22 02:25:15,616 - INFO: Grid 2/4, Iter   40, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.03643423, 0.0364, 0.0362, 0.0002, 0.0000, 0.0001, 0.0500, 8.1970
+2025-11-22 02:25:27,060 - INFO: Grid 2/4, Iter   50, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.03364497, 0.0336, 0.0334, 0.0002, 0.0000, 0.0001, 0.0500, 8.2670
+2025-11-22 02:25:38,550 - INFO: Grid 2/4, Iter   60, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.03103298, 0.0310, 0.0308, 0.0002, 0.0000, 0.0001, 0.0500, 8.3427
+2025-11-22 02:25:49,998 - INFO: Grid 2/4, Iter   70, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.02865362, 0.0287, 0.0285, 0.0002, 0.0000, 0.0001, 0.0500, 8.4237
+2025-11-22 02:26:01,496 - INFO: Grid 2/4, Iter   80, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.02652800, 0.0265, 0.0264, 0.0002, 0.0000, 0.0001, 0.0500, 8.5057
+2025-11-22 02:26:12,973 - INFO: Grid 2/4, Iter   90, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.02464843, 0.0246, 0.0245, 0.0002, 0.0000, 0.0001, 0.0500, 8.5867
+2025-11-22 02:26:24,474 - INFO: Grid 2/4, Iter  100, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.02299500, 0.0230, 0.0229, 0.0001, 0.0000, 0.0001, 0.0500, 8.6651
+2025-11-22 02:26:37,022 - INFO: Grid 2/4, Iter  110, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.02154177, 0.0215, 0.0214, 0.0001, 0.0000, 0.0001, 0.0500, 8.7413
+2025-11-22 02:26:48,498 - INFO: Grid 2/4, Iter  120, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.02026230, 0.0203, 0.0201, 0.0001, 0.0000, 0.0001, 0.0500, 8.8172
+2025-11-22 02:26:59,995 - INFO: Grid 2/4, Iter  130, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01913124, 0.0191, 0.0190, 0.0001, 0.0000, 0.0001, 0.0500, 8.8906
+2025-11-22 02:27:11,481 - INFO: Grid 2/4, Iter  140, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01812762, 0.0181, 0.0180, 0.0001, 0.0000, 0.0001, 0.0500, 8.9606
+2025-11-22 02:27:22,971 - INFO: Grid 2/4, Iter  150, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01723117, 0.0172, 0.0171, 0.0001, 0.0000, 0.0000, 0.0500, 9.0280
+2025-11-22 02:27:34,389 - INFO: Grid 2/4, Iter  160, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01642871, 0.0164, 0.0163, 0.0001, 0.0000, 0.0000, 0.0500, 9.0923
+2025-11-22 02:27:45,758 - INFO: Grid 2/4, Iter  170, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01570702, 0.0157, 0.0156, 0.0001, 0.0000, 0.0000, 0.0500, 9.1546
+2025-11-22 02:27:57,152 - INFO: Grid 2/4, Iter  180, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01505643, 0.0151, 0.0149, 0.0001, 0.0000, 0.0000, 0.0500, 9.2147
+2025-11-22 02:28:08,534 - INFO: Grid 2/4, Iter  190, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01446736, 0.0145, 0.0144, 0.0001, 0.0000, 0.0000, 0.0500, 9.2723
+2025-11-22 02:28:19,986 - INFO: Grid 2/4, Iter  200, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01393276, 0.0139, 0.0138, 0.0001, 0.0000, 0.0000, 0.0500, 9.3276
+2025-11-22 02:28:32,151 - INFO: Grid 2/4, Iter  210, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01344562, 0.0134, 0.0133, 0.0001, 0.0000, 0.0000, 0.0500, 9.3812
+2025-11-22 02:28:44,275 - INFO: Grid 2/4, Iter  220, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01299995, 0.0130, 0.0129, 0.0001, 0.0000, 0.0000, 0.0500, 9.4326
+2025-11-22 02:28:55,742 - INFO: Grid 2/4, Iter  230, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01259172, 0.0126, 0.0125, 0.0001, 0.0000, 0.0000, 0.0500, 9.4823
+2025-11-22 02:29:07,487 - INFO: Grid 2/4, Iter  240, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01221627, 0.0122, 0.0121, 0.0001, 0.0000, 0.0000, 0.0500, 9.5307
+2025-11-22 02:29:18,892 - INFO: Grid 2/4, Iter  250, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01186997, 0.0119, 0.0118, 0.0001, 0.0000, 0.0000, 0.0250, 9.5782
+2025-11-22 02:29:30,325 - INFO: Grid 2/4, Iter  260, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01169199, 0.0117, 0.0116, 0.0001, 0.0000, 0.0000, 0.0250, 9.6011
+2025-11-22 02:29:41,738 - INFO: Grid 2/4, Iter  270, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01153666, 0.0115, 0.0114, 0.0001, 0.0000, 0.0000, 0.0250, 9.6236
+2025-11-22 02:29:53,240 - INFO: Grid 2/4, Iter  280, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01138699, 0.0114, 0.0113, 0.0001, 0.0000, 0.0000, 0.0250, 9.6459
+2025-11-22 02:30:04,717 - INFO: Grid 2/4, Iter  290, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01124161, 0.0112, 0.0111, 0.0001, 0.0000, 0.0000, 0.0250, 9.6683
+2025-11-22 02:30:16,239 - INFO: Grid 2/4, Iter  300, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01110089, 0.0111, 0.0110, 0.0001, 0.0000, 0.0000, 0.0250, 9.6907
+2025-11-22 02:30:28,465 - INFO: Grid 2/4, Iter  310, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01096433, 0.0110, 0.0109, 0.0001, 0.0000, 0.0000, 0.0250, 9.7130
+2025-11-22 02:30:39,884 - INFO: Grid 2/4, Iter  320, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01083195, 0.0108, 0.0107, 0.0001, 0.0000, 0.0000, 0.0250, 9.7352
+2025-11-22 02:30:51,623 - INFO: Grid 2/4, Iter  330, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01070380, 0.0107, 0.0106, 0.0001, 0.0000, 0.0000, 0.0250, 9.7574
+2025-11-22 02:31:03,053 - INFO: Grid 2/4, Iter  340, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01057959, 0.0106, 0.0105, 0.0001, 0.0000, 0.0000, 0.0250, 9.7797
+2025-11-22 02:31:14,495 - INFO: Grid 2/4, Iter  350, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01045895, 0.0105, 0.0104, 0.0001, 0.0000, 0.0000, 0.0250, 9.8018
+2025-11-22 02:31:25,990 - INFO: Grid 2/4, Iter  360, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01034212, 0.0103, 0.0102, 0.0001, 0.0000, 0.0000, 0.0250, 9.8238
+2025-11-22 02:31:37,462 - INFO: Grid 2/4, Iter  370, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01022899, 0.0102, 0.0101, 0.0001, 0.0000, 0.0000, 0.0250, 9.8456
+2025-11-22 02:31:48,981 - INFO: Grid 2/4, Iter  380, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01011932, 0.0101, 0.0100, 0.0001, 0.0000, 0.0000, 0.0250, 9.8673
+2025-11-22 02:32:00,562 - INFO: Grid 2/4, Iter  390, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.01001292, 0.0100, 0.0099, 0.0001, 0.0000, 0.0000, 0.0250, 9.8889
+2025-11-22 02:32:12,069 - INFO: Grid 2/4, Iter  400, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00990945, 0.0099, 0.0098, 0.0001, 0.0000, 0.0000, 0.0250, 9.9104
+2025-11-22 02:32:24,735 - INFO: Grid 2/4, Iter  410, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00980949, 0.0098, 0.0097, 0.0001, 0.0000, 0.0000, 0.0250, 9.9317
+2025-11-22 02:32:36,171 - INFO: Grid 2/4, Iter  420, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00971246, 0.0097, 0.0096, 0.0001, 0.0000, 0.0000, 0.0250, 9.9527
+2025-11-22 02:32:47,644 - INFO: Grid 2/4, Iter  430, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00961792, 0.0096, 0.0095, 0.0001, 0.0000, 0.0000, 0.0250, 9.9737
+2025-11-22 02:32:59,139 - INFO: Grid 2/4, Iter  440, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00952625, 0.0095, 0.0094, 0.0001, 0.0000, 0.0000, 0.0250, 9.9943
+2025-11-22 02:33:10,625 - INFO: Grid 2/4, Iter  450, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00943738, 0.0094, 0.0093, 0.0001, 0.0000, 0.0000, 0.0250, 10.0148
+2025-11-22 02:33:22,145 - INFO: Grid 2/4, Iter  460, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00935078, 0.0094, 0.0092, 0.0001, 0.0000, 0.0000, 0.0250, 10.0350
+2025-11-22 02:33:33,673 - INFO: Grid 2/4, Iter  470, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00926715, 0.0093, 0.0092, 0.0001, 0.0000, 0.0000, 0.0250, 10.0551
+2025-11-22 02:33:45,134 - INFO: Grid 2/4, Iter  480, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00918537, 0.0092, 0.0091, 0.0001, 0.0000, 0.0000, 0.0250, 10.0751
+2025-11-22 02:33:56,531 - INFO: Grid 2/4, Iter  490, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00910610, 0.0091, 0.0090, 0.0001, 0.0000, 0.0000, 0.0250, 10.0949
+2025-11-22 02:34:07,962 - INFO: Grid 2/4, Iter  500, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00902915, 0.0090, 0.0089, 0.0001, 0.0000, 0.0000, 0.0125, 10.1144
+2025-11-22 02:34:20,260 - INFO: Grid 2/4, Iter  510, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00898767, 0.0090, 0.0089, 0.0001, 0.0000, 0.0000, 0.0125, 10.1241
+2025-11-22 02:34:31,747 - INFO: Grid 2/4, Iter  520, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00895035, 0.0090, 0.0088, 0.0001, 0.0000, 0.0000, 0.0125, 10.1337
+2025-11-22 02:34:43,172 - INFO: Grid 2/4, Iter  530, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00891352, 0.0089, 0.0088, 0.0001, 0.0000, 0.0000, 0.0125, 10.1433
+2025-11-22 02:34:54,588 - INFO: Grid 2/4, Iter  540, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00887698, 0.0089, 0.0088, 0.0001, 0.0000, 0.0000, 0.0125, 10.1528
+2025-11-22 02:35:05,991 - INFO: Grid 2/4, Iter  550, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00884098, 0.0088, 0.0087, 0.0001, 0.0000, 0.0000, 0.0125, 10.1624
+2025-11-22 02:35:17,420 - INFO: Grid 2/4, Iter  560, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00880498, 0.0088, 0.0087, 0.0001, 0.0000, 0.0000, 0.0125, 10.1719
+2025-11-22 02:35:28,899 - INFO: Grid 2/4, Iter  570, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00876957, 0.0088, 0.0087, 0.0001, 0.0000, 0.0000, 0.0125, 10.1815
+2025-11-22 02:35:40,687 - INFO: Grid 2/4, Iter  580, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00873458, 0.0087, 0.0086, 0.0001, 0.0000, 0.0000, 0.0125, 10.1910
+2025-11-22 02:35:52,097 - INFO: Grid 2/4, Iter  590, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00869977, 0.0087, 0.0086, 0.0001, 0.0000, 0.0000, 0.0125, 10.2005
+2025-11-22 02:36:03,554 - INFO: Grid 2/4, Iter  600, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00866508, 0.0087, 0.0086, 0.0001, 0.0000, 0.0000, 0.0125, 10.2100
+2025-11-22 02:36:15,783 - INFO: Grid 2/4, Iter  610, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00863105, 0.0086, 0.0085, 0.0001, 0.0000, 0.0000, 0.0125, 10.2195
+2025-11-22 02:36:27,247 - INFO: Grid 2/4, Iter  620, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00859725, 0.0086, 0.0085, 0.0001, 0.0000, 0.0000, 0.0125, 10.2289
+2025-11-22 02:36:38,662 - INFO: Grid 2/4, Iter  630, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00856376, 0.0086, 0.0085, 0.0001, 0.0000, 0.0000, 0.0125, 10.2384
+2025-11-22 02:36:50,080 - INFO: Grid 2/4, Iter  640, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00853074, 0.0085, 0.0084, 0.0001, 0.0000, 0.0000, 0.0125, 10.2479
+2025-11-22 02:37:01,540 - INFO: Grid 2/4, Iter  650, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00849783, 0.0085, 0.0084, 0.0001, 0.0000, 0.0000, 0.0125, 10.2574
+2025-11-22 02:37:13,032 - INFO: Grid 2/4, Iter  660, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00846547, 0.0085, 0.0084, 0.0001, 0.0000, 0.0000, 0.0125, 10.2668
+2025-11-22 02:37:24,532 - INFO: Grid 2/4, Iter  670, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00843316, 0.0084, 0.0083, 0.0001, 0.0000, 0.0000, 0.0125, 10.2762
+2025-11-22 02:37:36,010 - INFO: Grid 2/4, Iter  680, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00840139, 0.0084, 0.0083, 0.0001, 0.0000, 0.0000, 0.0125, 10.2855
+2025-11-22 02:37:47,537 - INFO: Grid 2/4, Iter  690, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00836998, 0.0084, 0.0083, 0.0001, 0.0000, 0.0000, 0.0125, 10.2949
+2025-11-22 02:37:58,972 - INFO: Grid 2/4, Iter  700, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00833869, 0.0083, 0.0082, 0.0001, 0.0000, 0.0000, 0.0125, 10.3042
+2025-11-22 02:38:11,182 - INFO: Grid 2/4, Iter  710, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00830764, 0.0083, 0.0082, 0.0001, 0.0000, 0.0000, 0.0125, 10.3134
+2025-11-22 02:38:22,645 - INFO: Grid 2/4, Iter  720, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00827712, 0.0083, 0.0082, 0.0001, 0.0000, 0.0000, 0.0125, 10.3226
+2025-11-22 02:38:34,112 - INFO: Grid 2/4, Iter  730, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00824690, 0.0082, 0.0081, 0.0001, 0.0000, 0.0000, 0.0125, 10.3318
+2025-11-22 02:38:45,588 - INFO: Grid 2/4, Iter  740, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00821692, 0.0082, 0.0081, 0.0001, 0.0000, 0.0000, 0.0125, 10.3409
+2025-11-22 02:38:57,096 - INFO: Grid 2/4, Iter  750, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00818729, 0.0082, 0.0081, 0.0001, 0.0000, 0.0000, 0.0063, 10.3502
+2025-11-22 02:39:08,552 - INFO: Grid 2/4, Iter  760, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00817120, 0.0082, 0.0081, 0.0001, 0.0000, 0.0000, 0.0063, 10.3548
+2025-11-22 02:39:20,094 - INFO: Grid 2/4, Iter  770, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00815642, 0.0082, 0.0081, 0.0001, 0.0000, 0.0000, 0.0063, 10.3593
+2025-11-22 02:39:31,585 - INFO: Grid 2/4, Iter  780, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00814188, 0.0081, 0.0080, 0.0001, 0.0000, 0.0000, 0.0063, 10.3639
+2025-11-22 02:39:43,082 - INFO: Grid 2/4, Iter  790, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00812739, 0.0081, 0.0080, 0.0001, 0.0000, 0.0000, 0.0063, 10.3686
+2025-11-22 02:39:54,589 - INFO: Grid 2/4, Iter  800, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00811255, 0.0081, 0.0080, 0.0001, 0.0000, 0.0000, 0.0063, 10.3732
+2025-11-22 02:40:08,884 - INFO: Grid 2/4, Iter  810, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00809819, 0.0081, 0.0080, 0.0001, 0.0000, 0.0000, 0.0063, 10.3779
+2025-11-22 02:40:22,037 - INFO: Grid 2/4, Iter  820, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00808370, 0.0081, 0.0080, 0.0001, 0.0000, 0.0000, 0.0063, 10.3825
+2025-11-22 02:40:35,108 - INFO: Grid 2/4, Iter  830, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00806904, 0.0081, 0.0080, 0.0001, 0.0000, 0.0000, 0.0063, 10.3872
+2025-11-22 02:40:46,599 - INFO: Grid 2/4, Iter  840, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00805467, 0.0081, 0.0080, 0.0001, 0.0000, 0.0000, 0.0063, 10.3919
+2025-11-22 02:40:58,120 - INFO: Grid 2/4, Iter  850, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00804013, 0.0080, 0.0079, 0.0001, 0.0000, 0.0000, 0.0063, 10.3966
+2025-11-22 02:41:09,677 - INFO: Grid 2/4, Iter  860, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00802577, 0.0080, 0.0079, 0.0001, 0.0000, 0.0000, 0.0063, 10.4013
+2025-11-22 02:41:21,210 - INFO: Grid 2/4, Iter  870, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00801146, 0.0080, 0.0079, 0.0001, 0.0000, 0.0000, 0.0063, 10.4061
+2025-11-22 02:41:32,937 - INFO: Grid 2/4, Iter  880, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00799710, 0.0080, 0.0079, 0.0001, 0.0000, 0.0000, 0.0063, 10.4109
+2025-11-22 02:41:44,500 - INFO: Grid 2/4, Iter  890, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00798267, 0.0080, 0.0079, 0.0001, 0.0000, 0.0000, 0.0063, 10.4157
+2025-11-22 02:41:55,993 - INFO: Grid 2/4, Iter  900, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00796837, 0.0080, 0.0079, 0.0001, 0.0000, 0.0000, 0.0063, 10.4205
+2025-11-22 02:42:08,209 - INFO: Grid 2/4, Iter  910, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00795406, 0.0080, 0.0079, 0.0001, 0.0000, 0.0000, 0.0063, 10.4253
+2025-11-22 02:42:19,702 - INFO: Grid 2/4, Iter  920, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00793982, 0.0079, 0.0078, 0.0001, 0.0000, 0.0000, 0.0063, 10.4302
+2025-11-22 02:42:31,190 - INFO: Grid 2/4, Iter  930, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00792587, 0.0079, 0.0078, 0.0001, 0.0000, 0.0000, 0.0063, 10.4350
+2025-11-22 02:42:42,685 - INFO: Grid 2/4, Iter  940, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00791150, 0.0079, 0.0078, 0.0001, 0.0000, 0.0000, 0.0063, 10.4399
+2025-11-22 02:42:54,186 - INFO: Grid 2/4, Iter  950, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00789756, 0.0079, 0.0078, 0.0001, 0.0000, 0.0000, 0.0063, 10.4448
+2025-11-22 02:43:05,626 - INFO: Grid 2/4, Iter  960, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00788349, 0.0079, 0.0078, 0.0001, 0.0000, 0.0000, 0.0063, 10.4497
+2025-11-22 02:43:17,364 - INFO: Grid 2/4, Iter  970, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00786966, 0.0079, 0.0078, 0.0001, 0.0000, 0.0000, 0.0063, 10.4546
+2025-11-22 02:43:28,914 - INFO: Grid 2/4, Iter  980, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00785547, 0.0079, 0.0078, 0.0001, 0.0000, 0.0000, 0.0063, 10.4596
+2025-11-22 02:43:40,450 - INFO: Grid 2/4, Iter  990, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00784165, 0.0078, 0.0077, 0.0001, 0.0000, 0.0000, 0.0063, 10.4646
+2025-11-22 02:43:51,267 - INFO: Saved checkpoint for grid 2/4 to logging/0s-13s/DS1_batchstart_0_batch_end_1_init_uniform_opt_Adam_lr_0.05_reg_None_regw_0.0_top-grad-perc_1.0_cpt_None/sampleidx_0_grid_grid1_checkpoint.pt
+2025-11-22 02:43:51,268 - INFO: Optimizing grid 3/4: frames [300:600]
+2025-11-22 02:43:51,268 - INFO: Grid 3/4 starting LR reset to 0.050000
+2025-11-22 02:43:52,408 - INFO: Grid 3/4, Iter    0, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00782746, 0.0078, 0.0077, 0.0001, 0.0000, 0.0001, 0.0500, 8.8232
+2025-11-22 02:44:05,280 - INFO: Grid 3/4, Iter   10, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00728971, 0.0073, 0.0072, 0.0001, 0.0000, 0.0000, 0.0500, 8.8515
+2025-11-22 02:44:16,788 - INFO: Grid 3/4, Iter   20, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00702918, 0.0070, 0.0069, 0.0001, 0.0000, 0.0000, 0.0500, 8.8864
+2025-11-22 02:44:28,297 - INFO: Grid 3/4, Iter   30, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00682956, 0.0068, 0.0067, 0.0001, 0.0000, 0.0000, 0.0500, 8.9288
+2025-11-22 02:44:39,807 - INFO: Grid 3/4, Iter   40, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00666237, 0.0067, 0.0066, 0.0001, 0.0000, 0.0000, 0.0500, 8.9695
+2025-11-22 02:44:51,284 - INFO: Grid 3/4, Iter   50, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00651252, 0.0065, 0.0064, 0.0001, 0.0000, 0.0000, 0.0500, 9.0141
+2025-11-22 02:45:02,812 - INFO: Grid 3/4, Iter   60, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00637275, 0.0064, 0.0063, 0.0001, 0.0000, 0.0000, 0.0500, 9.0602
+2025-11-22 02:45:14,316 - INFO: Grid 3/4, Iter   70, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00623864, 0.0062, 0.0062, 0.0001, 0.0000, 0.0000, 0.0500, 9.1059
+2025-11-22 02:45:25,840 - INFO: Grid 3/4, Iter   80, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00610811, 0.0061, 0.0060, 0.0001, 0.0000, 0.0000, 0.0500, 9.1531
+2025-11-22 02:45:37,356 - INFO: Grid 3/4, Iter   90, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00598025, 0.0060, 0.0059, 0.0001, 0.0000, 0.0000, 0.0500, 9.2010
+2025-11-22 02:45:49,275 - INFO: Grid 3/4, Iter  100, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00585508, 0.0059, 0.0058, 0.0001, 0.0000, 0.0000, 0.0500, 9.2488
+2025-11-22 02:46:01,766 - INFO: Grid 3/4, Iter  110, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00573331, 0.0057, 0.0057, 0.0001, 0.0000, 0.0000, 0.0500, 9.2965
+2025-11-22 02:46:13,320 - INFO: Grid 3/4, Iter  120, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00561512, 0.0056, 0.0055, 0.0001, 0.0000, 0.0000, 0.0500, 9.3436
+2025-11-22 02:46:24,796 - INFO: Grid 3/4, Iter  130, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00550073, 0.0055, 0.0054, 0.0001, 0.0000, 0.0000, 0.0500, 9.3903
+2025-11-22 02:46:36,267 - INFO: Grid 3/4, Iter  140, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00539005, 0.0054, 0.0053, 0.0001, 0.0000, 0.0000, 0.0500, 9.4363
+2025-11-22 02:46:47,830 - INFO: Grid 3/4, Iter  150, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00528365, 0.0053, 0.0052, 0.0001, 0.0000, 0.0000, 0.0500, 9.4818
+2025-11-22 02:46:59,370 - INFO: Grid 3/4, Iter  160, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00518119, 0.0052, 0.0051, 0.0001, 0.0000, 0.0000, 0.0500, 9.5271
+2025-11-22 02:47:10,912 - INFO: Grid 3/4, Iter  170, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00508267, 0.0051, 0.0050, 0.0001, 0.0000, 0.0000, 0.0500, 9.5715
+2025-11-22 02:47:22,442 - INFO: Grid 3/4, Iter  180, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00498837, 0.0050, 0.0049, 0.0001, 0.0000, 0.0000, 0.0500, 9.6150
+2025-11-22 02:47:33,984 - INFO: Grid 3/4, Iter  190, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00489801, 0.0049, 0.0048, 0.0001, 0.0000, 0.0000, 0.0500, 9.6584
+2025-11-22 02:47:45,536 - INFO: Grid 3/4, Iter  200, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00481188, 0.0048, 0.0047, 0.0001, 0.0000, 0.0000, 0.0500, 9.7014
+2025-11-22 02:47:57,864 - INFO: Grid 3/4, Iter  210, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00473005, 0.0047, 0.0047, 0.0001, 0.0000, 0.0000, 0.0500, 9.7441
+2025-11-22 02:48:09,403 - INFO: Grid 3/4, Iter  220, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00465232, 0.0047, 0.0046, 0.0001, 0.0000, 0.0000, 0.0500, 9.7861
+2025-11-22 02:48:21,355 - INFO: Grid 3/4, Iter  230, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00457841, 0.0046, 0.0045, 0.0001, 0.0000, 0.0000, 0.0500, 9.8283
+2025-11-22 02:48:32,817 - INFO: Grid 3/4, Iter  240, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00450832, 0.0045, 0.0044, 0.0001, 0.0000, 0.0000, 0.0500, 9.8701
+2025-11-22 02:48:44,278 - INFO: Grid 3/4, Iter  250, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00444186, 0.0044, 0.0044, 0.0001, 0.0000, 0.0000, 0.0250, 9.9112
+2025-11-22 02:48:55,815 - INFO: Grid 3/4, Iter  260, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00440693, 0.0044, 0.0043, 0.0001, 0.0000, 0.0000, 0.0250, 9.9315
+2025-11-22 02:49:07,323 - INFO: Grid 3/4, Iter  270, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00437593, 0.0044, 0.0043, 0.0001, 0.0000, 0.0000, 0.0250, 9.9519
+2025-11-22 02:49:18,972 - INFO: Grid 3/4, Iter  280, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00434572, 0.0043, 0.0043, 0.0001, 0.0000, 0.0000, 0.0250, 9.9722
+2025-11-22 02:49:30,596 - INFO: Grid 3/4, Iter  290, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00431597, 0.0043, 0.0043, 0.0001, 0.0000, 0.0000, 0.0250, 9.9926
+2025-11-22 02:49:42,192 - INFO: Grid 3/4, Iter  300, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00428683, 0.0043, 0.0042, 0.0001, 0.0000, 0.0000, 0.0250, 10.0130
+2025-11-22 02:49:54,474 - INFO: Grid 3/4, Iter  310, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00425845, 0.0043, 0.0042, 0.0001, 0.0000, 0.0000, 0.0250, 10.0334
+2025-11-22 02:50:05,907 - INFO: Grid 3/4, Iter  320, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00423062, 0.0042, 0.0042, 0.0001, 0.0000, 0.0000, 0.0250, 10.0539
+2025-11-22 02:50:17,441 - INFO: Grid 3/4, Iter  330, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00420332, 0.0042, 0.0041, 0.0001, 0.0000, 0.0000, 0.0250, 10.0744
+2025-11-22 02:50:28,994 - INFO: Grid 3/4, Iter  340, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00417668, 0.0042, 0.0041, 0.0001, 0.0000, 0.0000, 0.0250, 10.0951
+2025-11-22 02:50:41,106 - INFO: Grid 3/4, Iter  350, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00415045, 0.0042, 0.0041, 0.0001, 0.0000, 0.0000, 0.0250, 10.1159
+2025-11-22 02:50:52,708 - INFO: Grid 3/4, Iter  360, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00412500, 0.0041, 0.0041, 0.0001, 0.0000, 0.0000, 0.0250, 10.1370
+2025-11-22 02:51:04,273 - INFO: Grid 3/4, Iter  370, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00410002, 0.0041, 0.0040, 0.0001, 0.0000, 0.0000, 0.0250, 10.1582
+2025-11-22 02:51:15,774 - INFO: Grid 3/4, Iter  380, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00407553, 0.0041, 0.0040, 0.0001, 0.0000, 0.0000, 0.0250, 10.1794
+2025-11-22 02:51:28,084 - INFO: Grid 3/4, Iter  390, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00405180, 0.0041, 0.0040, 0.0001, 0.0000, 0.0000, 0.0250, 10.2008
+2025-11-22 02:51:41,294 - INFO: Grid 3/4, Iter  400, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00402838, 0.0040, 0.0040, 0.0001, 0.0000, 0.0000, 0.0250, 10.2221
+2025-11-22 02:51:53,498 - INFO: Grid 3/4, Iter  410, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00400537, 0.0040, 0.0039, 0.0001, 0.0000, 0.0000, 0.0250, 10.2433
+2025-11-22 02:52:05,104 - INFO: Grid 3/4, Iter  420, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00398332, 0.0040, 0.0039, 0.0001, 0.0000, 0.0000, 0.0250, 10.2645
+2025-11-22 02:52:16,701 - INFO: Grid 3/4, Iter  430, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00396150, 0.0040, 0.0039, 0.0001, 0.0000, 0.0000, 0.0250, 10.2855
+2025-11-22 02:52:28,198 - INFO: Grid 3/4, Iter  440, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00394022, 0.0039, 0.0039, 0.0001, 0.0000, 0.0000, 0.0250, 10.3065
+2025-11-22 02:52:39,721 - INFO: Grid 3/4, Iter  450, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00391936, 0.0039, 0.0039, 0.0001, 0.0000, 0.0000, 0.0250, 10.3275
+2025-11-22 02:52:51,236 - INFO: Grid 3/4, Iter  460, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00389910, 0.0039, 0.0038, 0.0001, 0.0000, 0.0000, 0.0250, 10.3484
+2025-11-22 02:53:02,770 - INFO: Grid 3/4, Iter  470, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00387931, 0.0039, 0.0038, 0.0001, 0.0000, 0.0000, 0.0250, 10.3691
+2025-11-22 02:53:14,281 - INFO: Grid 3/4, Iter  480, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00385976, 0.0039, 0.0038, 0.0001, 0.0000, 0.0000, 0.0250, 10.3896
+2025-11-22 02:53:25,811 - INFO: Grid 3/4, Iter  490, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00384080, 0.0038, 0.0038, 0.0001, 0.0000, 0.0000, 0.0250, 10.4099
+2025-11-22 02:53:37,360 - INFO: Grid 3/4, Iter  500, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00382251, 0.0038, 0.0038, 0.0001, 0.0000, 0.0000, 0.0125, 10.4302
+2025-11-22 02:53:49,729 - INFO: Grid 3/4, Iter  510, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00381219, 0.0038, 0.0038, 0.0001, 0.0000, 0.0000, 0.0125, 10.4403
+2025-11-22 02:54:01,230 - INFO: Grid 3/4, Iter  520, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00380319, 0.0038, 0.0038, 0.0001, 0.0000, 0.0000, 0.0125, 10.4503
+2025-11-22 02:54:12,754 - INFO: Grid 3/4, Iter  530, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00379443, 0.0038, 0.0037, 0.0001, 0.0000, 0.0000, 0.0125, 10.4604
+2025-11-22 02:54:24,706 - INFO: Grid 3/4, Iter  540, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00378549, 0.0038, 0.0037, 0.0001, 0.0000, 0.0000, 0.0125, 10.4705
+2025-11-22 02:54:36,185 - INFO: Grid 3/4, Iter  550, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00377667, 0.0038, 0.0037, 0.0001, 0.0000, 0.0000, 0.0125, 10.4806
+2025-11-22 02:54:47,698 - INFO: Grid 3/4, Iter  560, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00376809, 0.0038, 0.0037, 0.0001, 0.0000, 0.0000, 0.0125, 10.4908
+2025-11-22 02:54:59,240 - INFO: Grid 3/4, Iter  570, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00375932, 0.0038, 0.0037, 0.0001, 0.0000, 0.0000, 0.0125, 10.5010
+2025-11-22 02:55:10,803 - INFO: Grid 3/4, Iter  580, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00375062, 0.0038, 0.0037, 0.0001, 0.0000, 0.0000, 0.0125, 10.5111
+2025-11-22 02:55:22,324 - INFO: Grid 3/4, Iter  590, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00374210, 0.0037, 0.0037, 0.0001, 0.0000, 0.0000, 0.0125, 10.5212
+2025-11-22 02:55:33,760 - INFO: Grid 3/4, Iter  600, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00373375, 0.0037, 0.0037, 0.0001, 0.0000, 0.0000, 0.0125, 10.5313
+2025-11-22 02:55:45,967 - INFO: Grid 3/4, Iter  610, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00372517, 0.0037, 0.0037, 0.0001, 0.0000, 0.0000, 0.0125, 10.5415
+2025-11-22 02:55:57,466 - INFO: Grid 3/4, Iter  620, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00371695, 0.0037, 0.0037, 0.0001, 0.0000, 0.0000, 0.0125, 10.5516
+2025-11-22 02:56:09,005 - INFO: Grid 3/4, Iter  630, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00370878, 0.0037, 0.0037, 0.0001, 0.0000, 0.0000, 0.0125, 10.5617
+2025-11-22 02:56:20,457 - INFO: Grid 3/4, Iter  640, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00370044, 0.0037, 0.0037, 0.0000, 0.0000, 0.0000, 0.0125, 10.5719
+2025-11-22 02:56:31,904 - INFO: Grid 3/4, Iter  650, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00369233, 0.0037, 0.0036, 0.0000, 0.0000, 0.0000, 0.0125, 10.5821
+2025-11-22 02:56:43,451 - INFO: Grid 3/4, Iter  660, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00368416, 0.0037, 0.0036, 0.0000, 0.0000, 0.0000, 0.0125, 10.5923
+2025-11-22 02:56:54,967 - INFO: Grid 3/4, Iter  670, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00367624, 0.0037, 0.0036, 0.0000, 0.0000, 0.0000, 0.0125, 10.6025
+2025-11-22 02:57:07,860 - INFO: Grid 3/4, Iter  680, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00366813, 0.0037, 0.0036, 0.0000, 0.0000, 0.0000, 0.0125, 10.6128
+2025-11-22 02:57:19,419 - INFO: Grid 3/4, Iter  690, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00366038, 0.0037, 0.0036, 0.0000, 0.0000, 0.0000, 0.0125, 10.6230
+2025-11-22 02:57:30,840 - INFO: Grid 3/4, Iter  700, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00365251, 0.0037, 0.0036, 0.0000, 0.0000, 0.0000, 0.0125, 10.6333
+2025-11-22 02:57:43,040 - INFO: Grid 3/4, Iter  710, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00364459, 0.0036, 0.0036, 0.0000, 0.0000, 0.0000, 0.0125, 10.6436
+2025-11-22 02:57:54,503 - INFO: Grid 3/4, Iter  720, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00363690, 0.0036, 0.0036, 0.0000, 0.0000, 0.0000, 0.0125, 10.6539
+2025-11-22 02:58:06,029 - INFO: Grid 3/4, Iter  730, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00362945, 0.0036, 0.0036, 0.0000, 0.0000, 0.0000, 0.0125, 10.6642
+2025-11-22 02:58:17,475 - INFO: Grid 3/4, Iter  740, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00362182, 0.0036, 0.0036, 0.0000, 0.0000, 0.0000, 0.0125, 10.6744
+2025-11-22 02:58:29,021 - INFO: Grid 3/4, Iter  750, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00361419, 0.0036, 0.0036, 0.0000, 0.0000, 0.0000, 0.0063, 10.6847
+2025-11-22 02:58:40,576 - INFO: Grid 3/4, Iter  760, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00361013, 0.0036, 0.0036, 0.0000, 0.0000, 0.0000, 0.0063, 10.6898
+2025-11-22 02:58:52,068 - INFO: Grid 3/4, Iter  770, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00360632, 0.0036, 0.0036, 0.0000, 0.0000, 0.0000, 0.0063, 10.6950
+2025-11-22 02:59:03,871 - INFO: Grid 3/4, Iter  780, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00360274, 0.0036, 0.0036, 0.0000, 0.0000, 0.0000, 0.0063, 10.7001
+2025-11-22 02:59:15,990 - INFO: Grid 3/4, Iter  790, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00359917, 0.0036, 0.0036, 0.0000, 0.0000, 0.0000, 0.0063, 10.7053
+2025-11-22 02:59:27,791 - INFO: Grid 3/4, Iter  800, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00359523, 0.0036, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7105
+2025-11-22 02:59:40,684 - INFO: Grid 3/4, Iter  810, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00359148, 0.0036, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7157
+2025-11-22 02:59:52,263 - INFO: Grid 3/4, Iter  820, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00358778, 0.0036, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7210
+2025-11-22 03:00:03,787 - INFO: Grid 3/4, Iter  830, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00358415, 0.0036, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7262
+2025-11-22 03:00:15,491 - INFO: Grid 3/4, Iter  840, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00358033, 0.0036, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7315
+2025-11-22 03:00:27,202 - INFO: Grid 3/4, Iter  850, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00357676, 0.0036, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7367
+2025-11-22 03:00:38,835 - INFO: Grid 3/4, Iter  860, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00357306, 0.0036, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7420
+2025-11-22 03:00:50,447 - INFO: Grid 3/4, Iter  870, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00356936, 0.0036, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7473
+2025-11-22 03:01:02,052 - INFO: Grid 3/4, Iter  880, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00356585, 0.0036, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7526
+2025-11-22 03:01:13,588 - INFO: Grid 3/4, Iter  890, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00356215, 0.0036, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7579
+2025-11-22 03:01:25,133 - INFO: Grid 3/4, Iter  900, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00355840, 0.0036, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7632
+2025-11-22 03:01:37,471 - INFO: Grid 3/4, Iter  910, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00355476, 0.0036, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7685
+2025-11-22 03:01:49,038 - INFO: Grid 3/4, Iter  920, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00355107, 0.0036, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7739
+2025-11-22 03:02:00,596 - INFO: Grid 3/4, Iter  930, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00354755, 0.0035, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7793
+2025-11-22 03:02:12,108 - INFO: Grid 3/4, Iter  940, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00354385, 0.0035, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7846
+2025-11-22 03:02:23,650 - INFO: Grid 3/4, Iter  950, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00354034, 0.0035, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7900
+2025-11-22 03:02:35,166 - INFO: Grid 3/4, Iter  960, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00353664, 0.0035, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.7954
+2025-11-22 03:02:46,742 - INFO: Grid 3/4, Iter  970, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00353295, 0.0035, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.8007
+2025-11-22 03:02:58,269 - INFO: Grid 3/4, Iter  980, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00352955, 0.0035, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.8061
+2025-11-22 03:03:09,907 - INFO: Grid 3/4, Iter  990, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00352597, 0.0035, 0.0035, 0.0000, 0.0000, 0.0000, 0.0063, 10.8115
+2025-11-22 03:03:20,273 - INFO: Saved checkpoint for grid 3/4 to logging/0s-13s/DS1_batchstart_0_batch_end_1_init_uniform_opt_Adam_lr_0.05_reg_None_regw_0.0_top-grad-perc_1.0_cpt_None/sampleidx_0_grid_grid2_checkpoint.pt
+2025-11-22 03:03:20,275 - INFO: Optimizing grid 4/4: frames [450:627]
+2025-11-22 03:03:20,276 - INFO: Grid 4/4 starting LR reset to 0.050000
+2025-11-22 03:03:21,421 - INFO: Grid 4/4, Iter    0, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00352234, 0.0035, 0.0035, 0.0000, 0.0000, 0.0000, 0.0500, 8.3189
+2025-11-22 03:03:34,279 - INFO: Grid 4/4, Iter   10, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00344092, 0.0034, 0.0034, 0.0000, 0.0000, 0.0000, 0.0500, 8.3588
+2025-11-22 03:03:45,747 - INFO: Grid 4/4, Iter   20, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00339299, 0.0034, 0.0033, 0.0000, 0.0000, 0.0000, 0.0500, 8.4068
+2025-11-22 03:03:57,271 - INFO: Grid 4/4, Iter   30, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00335646, 0.0034, 0.0033, 0.0000, 0.0000, 0.0000, 0.0500, 8.4552
+2025-11-22 03:04:08,817 - INFO: Grid 4/4, Iter   40, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00332534, 0.0033, 0.0033, 0.0000, 0.0000, 0.0000, 0.0500, 8.5043
+2025-11-22 03:04:20,379 - INFO: Grid 4/4, Iter   50, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00329798, 0.0033, 0.0033, 0.0000, 0.0000, 0.0000, 0.0500, 8.5540
+2025-11-22 03:04:31,882 - INFO: Grid 4/4, Iter   60, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00327259, 0.0033, 0.0032, 0.0000, 0.0000, 0.0000, 0.0500, 8.6038
+2025-11-22 03:04:43,395 - INFO: Grid 4/4, Iter   70, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00324923, 0.0032, 0.0032, 0.0000, 0.0000, 0.0000, 0.0500, 8.6528
+2025-11-22 03:04:54,909 - INFO: Grid 4/4, Iter   80, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00322700, 0.0032, 0.0032, 0.0000, 0.0000, 0.0000, 0.0500, 8.7011
+2025-11-22 03:05:06,408 - INFO: Grid 4/4, Iter   90, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00320584, 0.0032, 0.0032, 0.0000, 0.0000, 0.0000, 0.0500, 8.7486
+2025-11-22 03:05:17,900 - INFO: Grid 4/4, Iter  100, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00318551, 0.0032, 0.0031, 0.0000, 0.0000, 0.0000, 0.0500, 8.7966
+2025-11-22 03:05:30,188 - INFO: Grid 4/4, Iter  110, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00316584, 0.0032, 0.0031, 0.0000, 0.0000, 0.0000, 0.0500, 8.8442
+2025-11-22 03:05:41,749 - INFO: Grid 4/4, Iter  120, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00314671, 0.0031, 0.0031, 0.0000, 0.0000, 0.0000, 0.0500, 8.8926
+2025-11-22 03:05:53,467 - INFO: Grid 4/4, Iter  130, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00312823, 0.0031, 0.0031, 0.0000, 0.0000, 0.0000, 0.0500, 8.9408
+2025-11-22 03:06:05,007 - INFO: Grid 4/4, Iter  140, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00311029, 0.0031, 0.0031, 0.0000, 0.0000, 0.0000, 0.0500, 8.9882
+2025-11-22 03:06:16,454 - INFO: Grid 4/4, Iter  150, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00309306, 0.0031, 0.0031, 0.0000, 0.0000, 0.0000, 0.0500, 9.0349
+2025-11-22 03:06:27,926 - INFO: Grid 4/4, Iter  160, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00307649, 0.0031, 0.0030, 0.0000, 0.0000, 0.0000, 0.0500, 9.0808
+2025-11-22 03:06:39,353 - INFO: Grid 4/4, Iter  170, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00306058, 0.0031, 0.0030, 0.0000, 0.0000, 0.0000, 0.0500, 9.1262
+2025-11-22 03:06:50,915 - INFO: Grid 4/4, Iter  180, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00304550, 0.0030, 0.0030, 0.0000, 0.0000, 0.0000, 0.0500, 9.1717
+2025-11-22 03:07:02,463 - INFO: Grid 4/4, Iter  190, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00303096, 0.0030, 0.0030, 0.0000, 0.0000, 0.0000, 0.0500, 9.2175
+2025-11-22 03:07:14,011 - INFO: Grid 4/4, Iter  200, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00301731, 0.0030, 0.0030, 0.0000, 0.0000, 0.0000, 0.0500, 9.2641
+2025-11-22 03:07:26,261 - INFO: Grid 4/4, Iter  210, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00300407, 0.0030, 0.0030, 0.0000, 0.0000, 0.0000, 0.0500, 9.3102
+2025-11-22 03:07:37,707 - INFO: Grid 4/4, Iter  220, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00299156, 0.0030, 0.0030, 0.0000, 0.0000, 0.0000, 0.0500, 9.3548
+2025-11-22 03:07:49,696 - INFO: Grid 4/4, Iter  230, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00297976, 0.0030, 0.0029, 0.0000, 0.0000, 0.0000, 0.0500, 9.3992
+2025-11-22 03:08:01,236 - INFO: Grid 4/4, Iter  240, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00296831, 0.0030, 0.0029, 0.0000, 0.0000, 0.0000, 0.0500, 9.4434
+2025-11-22 03:08:12,721 - INFO: Grid 4/4, Iter  250, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00295764, 0.0030, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.4873
+2025-11-22 03:08:24,201 - INFO: Grid 4/4, Iter  260, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00295186, 0.0030, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.5088
+2025-11-22 03:08:35,708 - INFO: Grid 4/4, Iter  270, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00294673, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.5299
+2025-11-22 03:08:47,171 - INFO: Grid 4/4, Iter  280, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00294185, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.5506
+2025-11-22 03:08:58,708 - INFO: Grid 4/4, Iter  290, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00293690, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.5714
+2025-11-22 03:09:10,239 - INFO: Grid 4/4, Iter  300, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00293225, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.5921
+2025-11-22 03:09:22,556 - INFO: Grid 4/4, Iter  310, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00292742, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.6126
+2025-11-22 03:09:34,094 - INFO: Grid 4/4, Iter  320, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00292289, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.6331
+2025-11-22 03:09:45,604 - INFO: Grid 4/4, Iter  330, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00291824, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.6536
+2025-11-22 03:09:57,060 - INFO: Grid 4/4, Iter  340, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00291377, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.6742
+2025-11-22 03:10:08,535 - INFO: Grid 4/4, Iter  350, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00290954, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.6947
+2025-11-22 03:10:20,023 - INFO: Grid 4/4, Iter  360, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00290543, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.7150
+2025-11-22 03:10:31,545 - INFO: Grid 4/4, Iter  370, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00290126, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.7354
+2025-11-22 03:10:43,058 - INFO: Grid 4/4, Iter  380, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00289690, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.7556
+2025-11-22 03:10:54,564 - INFO: Grid 4/4, Iter  390, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00289279, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.7761
+2025-11-22 03:11:06,111 - INFO: Grid 4/4, Iter  400, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00288904, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.7964
+2025-11-22 03:11:19,066 - INFO: Grid 4/4, Iter  410, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00288498, 0.0029, 0.0029, 0.0000, 0.0000, 0.0000, 0.0250, 9.8166
+2025-11-22 03:11:30,603 - INFO: Grid 4/4, Iter  420, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00288111, 0.0029, 0.0028, 0.0000, 0.0000, 0.0000, 0.0250, 9.8368
+2025-11-22 03:11:42,175 - INFO: Grid 4/4, Iter  430, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00287730, 0.0029, 0.0028, 0.0000, 0.0000, 0.0000, 0.0250, 9.8571
+2025-11-22 03:11:53,708 - INFO: Grid 4/4, Iter  440, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00287348, 0.0029, 0.0028, 0.0000, 0.0000, 0.0000, 0.0250, 9.8770
+2025-11-22 03:12:05,238 - INFO: Grid 4/4, Iter  450, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00286978, 0.0029, 0.0028, 0.0000, 0.0000, 0.0000, 0.0250, 9.8970
+2025-11-22 03:12:16,780 - INFO: Grid 4/4, Iter  460, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00286639, 0.0029, 0.0028, 0.0000, 0.0000, 0.0000, 0.0250, 9.9171
+2025-11-22 03:12:28,329 - INFO: Grid 4/4, Iter  470, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00286275, 0.0029, 0.0028, 0.0000, 0.0000, 0.0000, 0.0250, 9.9373
+2025-11-22 03:12:39,852 - INFO: Grid 4/4, Iter  480, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00285929, 0.0029, 0.0028, 0.0000, 0.0000, 0.0000, 0.0250, 9.9572
+2025-11-22 03:12:51,396 - INFO: Grid 4/4, Iter  490, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00285572, 0.0029, 0.0028, 0.0000, 0.0000, 0.0000, 0.0250, 9.9770
+2025-11-22 03:13:02,867 - INFO: Grid 4/4, Iter  500, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00285238, 0.0029, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 9.9968
+2025-11-22 03:13:15,103 - INFO: Grid 4/4, Iter  510, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00285047, 0.0029, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.0067
+2025-11-22 03:13:26,566 - INFO: Grid 4/4, Iter  520, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00284874, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.0164
+2025-11-22 03:13:38,022 - INFO: Grid 4/4, Iter  530, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00284725, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.0262
+2025-11-22 03:13:49,483 - INFO: Grid 4/4, Iter  540, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00284547, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.0359
+2025-11-22 03:14:00,936 - INFO: Grid 4/4, Iter  550, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00284392, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.0456
+2025-11-22 03:14:12,396 - INFO: Grid 4/4, Iter  560, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00284231, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.0553
+2025-11-22 03:14:23,838 - INFO: Grid 4/4, Iter  570, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00284076, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.0651
+2025-11-22 03:14:35,324 - INFO: Grid 4/4, Iter  580, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00283909, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.0750
+2025-11-22 03:14:46,830 - INFO: Grid 4/4, Iter  590, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00283754, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.0849
+2025-11-22 03:14:58,292 - INFO: Grid 4/4, Iter  600, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00283575, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.0949
+2025-11-22 03:15:10,560 - INFO: Grid 4/4, Iter  610, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00283432, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.1048
+2025-11-22 03:15:22,712 - INFO: Grid 4/4, Iter  620, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00283277, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.1147
+2025-11-22 03:15:34,208 - INFO: Grid 4/4, Iter  630, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00283122, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.1246
+2025-11-22 03:15:45,675 - INFO: Grid 4/4, Iter  640, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00282949, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.1345
+2025-11-22 03:15:57,229 - INFO: Grid 4/4, Iter  650, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00282818, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.1445
+2025-11-22 03:16:08,746 - INFO: Grid 4/4, Iter  660, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00282669, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.1544
+2025-11-22 03:16:20,271 - INFO: Grid 4/4, Iter  670, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00282496, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.1644
+2025-11-22 03:16:31,772 - INFO: Grid 4/4, Iter  680, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00282347, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.1743
+2025-11-22 03:16:43,321 - INFO: Grid 4/4, Iter  690, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00282204, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.1842
+2025-11-22 03:16:54,883 - INFO: Grid 4/4, Iter  700, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00282037, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.1941
+2025-11-22 03:17:07,176 - INFO: Grid 4/4, Iter  710, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00281906, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.2039
+2025-11-22 03:17:18,706 - INFO: Grid 4/4, Iter  720, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00281745, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.2137
+2025-11-22 03:17:30,175 - INFO: Grid 4/4, Iter  730, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00281590, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.2235
+2025-11-22 03:17:41,661 - INFO: Grid 4/4, Iter  740, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00281465, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0125, 10.2333
+2025-11-22 03:17:53,214 - INFO: Grid 4/4, Iter  750, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00281310, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.2432
+2025-11-22 03:18:04,765 - INFO: Grid 4/4, Iter  760, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00281239, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.2481
+2025-11-22 03:18:16,287 - INFO: Grid 4/4, Iter  770, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00281161, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.2531
+2025-11-22 03:18:27,858 - INFO: Grid 4/4, Iter  780, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00281084, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.2580
+2025-11-22 03:18:39,484 - INFO: Grid 4/4, Iter  790, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00281024, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.2629
+2025-11-22 03:18:51,039 - INFO: Grid 4/4, Iter  800, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280935, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.2679
+2025-11-22 03:19:03,891 - INFO: Grid 4/4, Iter  810, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280881, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.2728
+2025-11-22 03:19:15,441 - INFO: Grid 4/4, Iter  820, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280797, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.2777
+2025-11-22 03:19:26,972 - INFO: Grid 4/4, Iter  830, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280720, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.2826
+2025-11-22 03:19:38,530 - INFO: Grid 4/4, Iter  840, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280654, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.2875
+2025-11-22 03:19:50,070 - INFO: Grid 4/4, Iter  850, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280595, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.2925
+2025-11-22 03:20:01,623 - INFO: Grid 4/4, Iter  860, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280529, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.2974
+2025-11-22 03:20:13,169 - INFO: Grid 4/4, Iter  870, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280446, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.3024
+2025-11-22 03:20:24,727 - INFO: Grid 4/4, Iter  880, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280386, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.3074
+2025-11-22 03:20:36,248 - INFO: Grid 4/4, Iter  890, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280321, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.3124
+2025-11-22 03:20:47,801 - INFO: Grid 4/4, Iter  900, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280243, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.3174
+2025-11-22 03:21:01,181 - INFO: Grid 4/4, Iter  910, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280166, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.3224
+2025-11-22 03:21:12,797 - INFO: Grid 4/4, Iter  920, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280094, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.3274
+2025-11-22 03:21:24,299 - INFO: Grid 4/4, Iter  930, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00280017, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.3324
+2025-11-22 03:21:35,789 - INFO: Grid 4/4, Iter  940, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00279957, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.3374
+2025-11-22 03:21:47,293 - INFO: Grid 4/4, Iter  950, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00279891, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.3424
+2025-11-22 03:21:58,797 - INFO: Grid 4/4, Iter  960, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00279820, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.3474
+2025-11-22 03:22:10,305 - INFO: Grid 4/4, Iter  970, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00279748, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.3524
+2025-11-22 03:22:21,799 - INFO: Grid 4/4, Iter  980, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00279683, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.3574
+2025-11-22 03:22:33,351 - INFO: Grid 4/4, Iter  990, Loss (A-G-Gw-Gb-R), Gradient Norm, LR, MAE: 0.00279611, 0.0028, 0.0028, 0.0000, 0.0000, 0.0000, 0.0063, 10.3624
+2025-11-22 03:22:43,751 - INFO: Saved checkpoint for grid 4/4 to logging/0s-13s/DS1_batchstart_0_batch_end_1_init_uniform_opt_Adam_lr_0.05_reg_None_regw_0.0_top-grad-perc_1.0_cpt_None/sampleidx_0_grid_grid3_checkpoint.pt
+2025-11-22 03:22:43,752 - INFO: Grid optimization complete.
+2025-11-22 03:22:43,752 - INFO: Saving loss plot...
+2025-11-22 03:22:44,374 - INFO: Loss plot saved to: logging/0s-13s/DS1_batchstart_0_batch_end_1_init_uniform_opt_Adam_lr_0.05_reg_None_regw_0.0_top-grad-perc_1.0_cpt_None/sampleidx_0_grid_loss_curves_0.png
+2025-11-22 03:22:44,375 - INFO: ================================================================================
+2025-11-22 03:22:44,375 - INFO: ================================================================================
+2025-11-22 03:22:44,376 - INFO: Experiment completed successfully
+2025-11-22 03:22:44,376 - INFO: Experiment completed successfully
+2025-11-22 03:22:44,376 - INFO: ================================================================================
+2025-11-22 03:22:44,376 - INFO: ================================================================================
